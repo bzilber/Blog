@@ -50,6 +50,12 @@ body {
       width: 200px;
   }
 
+  footer {
+    background: coral;
+    text-align: center;
+    margin-top: 40px;
+    padding:1px;
+  }
   /* flexbox below here for navbar w/ stick position  */
 
   nav {
@@ -101,4 +107,18 @@ aside{
 
 h2{
   column-span: all
+}
+
+/*reponsive*/
+
+@media(max-width:600px){
+  article{
+    width: 100%;
+    float: none;
+  }
+
+  aside{
+    width: 100%;
+    float: none;
+  }
 }
