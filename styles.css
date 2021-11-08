@@ -77,15 +77,28 @@ body {
   /*For some reason putting it in with the flexbox (above) content worked, perhaps conflict with using another nav? */
 
   /* The image (first) that is inside the article should have text wrapped around it. */
-.feature {
+
+  .feature {
   float:left;
   margin: 15px;
 }
 
 /*The <article> and <aside> elements should display as a two column layout. The columns should be a flexible size so that if the browser window shrinks smaller the columns become narrower.*/
+
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: 20px;
   gap: 20px;
+}
+
+/* The photographs should display as a two column grid with a 1 pixel gap between the images. */
+
+aside{
+  column-count: 2;
+  grid-gap: 1px;
+}
+
+h2{
+  column-span: all
 }
